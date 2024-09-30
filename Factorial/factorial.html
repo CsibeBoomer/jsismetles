@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial calculator</title>
+</head>
+<body>
+    <h1>Enter a number to get the factorial:</h1>
+    <form  onsubmit="return Calculate(event)" id="form">
+        <label for="Number">Number:</label>
+        <input id="Number" name="Number" required><br><br>
+
+        <button type="submit" id="submitBtn">Submit</button>
+        <button type="button" onclick="resetForm()">Refresh</button>
+    </form>
+
+    <p id="result"></p>
+    
+    <script src="factorial.js"></script>
+</body>
+</html>

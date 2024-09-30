@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+<body>
+    <h1>Enter the data to get the BMI:</h1>
+    <form  onsubmit="return Calculate(event)" id="form">
+        <label for="Mass">Mass in kg:</label>
+        <input id="Mass" name="Mass" required><br><br>
+        
+        <label for="Height">Height in meter:</label>
+        <input id="Height" name="Height" required><br><br>
+
+        <button type="submit" id="submitBtn">Submit</button>
+        <button type="button" onclick="resetForm()">Refresh</button>
+    </form>
+
+    <p id="Bmi"></p>
+    <script src="bmi.js"></script>
+</body>
+</html>

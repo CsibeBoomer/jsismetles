@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print each letter</title>
+</head>
+<body>
+    <h1>Enter a word:</h1>
+    <form  onsubmit="return Calculate(event)" id="form">
+        <label for="Word">Word:</label>
+        <input id="Word" name="Word" required><br><br>
+
+        <button type="submit" id="submitBtn">Submit</button>
+        <button type="button" onclick="resetForm()">Refresh</button>
+    </form>
+
+    <p id="result"></p>
+    <script src="forloop.js"></script>
+</body>
+</html>

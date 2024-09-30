@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seconds in a day</title>
+</head>
+<body>
+    <h1>Enter the hour, minutes and seconds of the day:</h1>
+    <form  onsubmit="return Calculate(event)" id="form">
+        <label for="Hour">Hour:</label>
+        <input id="Hour" name="Hour" required><br><br>
+        
+        <label for="Minutes">Minutes:</label>
+        <input id="Minutes" name="Minutes" required><br><br>
+
+        <label for="Seconds">Seconds:</label>
+        <input id="Seconds" name="Seconds" required><br><br>
+
+        <button type="submit" id="submitBtn">Submit</button>
+        <button type="button" onclick="resetForm()">Refresh</button>
+    </form>
+
+    <p id="result"></p>
+    <script src="secondsInADay.js".js"></script>
+</body>
+</html>
